@@ -48,6 +48,6 @@ console.log("Outside:", a);
 on console.log
 <p>person.name= "user"; ✅</p>
 <p>person = {} ; ❌ </p>
-<p>Answer or Error: </p>
-<p>Why : </p>
+<p>Answer or Error: Assignment to constant variable. </p>
+<p>Why :beacuse value is  const cannot be changed and reassigened </p>
 </div>

@@ -117,7 +117,8 @@ console.log("Outside:", hs);
 
 //example 5
 
-const person = { name: "snehal thummar" };
+const person = { name: "demo" };
 console.log(person)
 person.name = "snehal thummar"; 
+//console.log(person)
 //person = {};           
