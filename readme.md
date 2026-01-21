@@ -49,5 +49,5 @@ on console.log
 <p>person.name= "user"; ✅</p>
 <p>person = {} ; ❌ </p>
 <p>Answer or Error: Assignment to constant variable. </p>
-<p>Why :beacuse value is  const cannot be changed and reassigened </p>
+<p>Why :beacuse value is  const variable cannot be changed and reassigened </p>
 </div>
