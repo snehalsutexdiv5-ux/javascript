@@ -102,3 +102,68 @@ switch ("rainy") {
     default:
         console.log("weather is unknow");
 }
+
+// // Early  return patteren 
+// function score(value) {
+//     if (value > 90) {
+//         return "value is more than 90";
+//     } else if (value < 80) {
+//         return "value is less than 80";
+//     } else if (value < 70) {
+//         return "value is less than 70";
+//     } else if (value < 60) {
+//         return "value is less than 60";
+//     } else {
+//         return "value is less than 60";
+//     }
+// }
+// score(65);
+//  console.log(score(65))
+
+// example 2
+// let score = prompt("Enter your marks");
+// score = Number(score);
+
+// function getGrade(marks) {
+//     if (marks >= 90 && marks <= 100) return "A+";
+//     else if (marks >= 80 && marks < 90) return "A";
+//     else if (marks >= 70 && marks < 80) return "B";
+//     else if (marks >= 60 && marks < 70) return "C";
+//     else if (marks >= 33 && marks < 60) return "D";
+//     else if (marks >= 0 && marks < 33) return "Fail";
+//     else return "Invalid Marks";
+// }
+
+// console.log(getGrade(score));
+
+// example 3
+function rps1(user, computer) {
+    if (user === computer) return "It's a tie!";
+    else if (
+        (user === "rock" && computer === "scissor") ||
+        (user === "paper" && computer === "rock") ||
+        (user === "scissor" && computer === "paper")
+    ) {
+        return "User wins!";
+    } else {
+        return "Computer wins!";
+    }
+}
+
+// Example run
+console.log(rps1("rock", "scissor"));   // User wins!
+console.log(rps1("paper", "rock"));     // User wins!
+console.log(rps1("scissor", "rock"));   // Computer wins!
+console.log(rps1("rock", "rock"));      // It's a tie!
+
+//    function score1(value) {
+//     if (value > 60) return "value is less than 60";
+//     else if (value > 70) return "value is less than 70";
+//     else if (value > 80) return "value is less than 80";
+//     else if (value > 90) return "value is less than 90";
+//     else return "value is more than 90";
+
+// }
+// score(80);
+ 
+// console.log(score1(80))

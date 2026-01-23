@@ -276,4 +276,90 @@ count-- compares first (5 === 5 → true),
 then count becomes 4.</P>
 <p></p>
 </div>
+
+_________________________________________________________________________________________________
+
+<div>
+<h1>Example 1 :</h1>
+<p>let x = 2;</p>
+<p>switch(x){
+   case 2:
+   console.log("Two");
+   case 3:
+   console.log("Three");
+}</P>
+<p>output : two three </p>
+<p>Reason: bacuse we not write break statement
+</P>
+</div>
+
+<div>
+
+
+
+<div>
+<h1>Example 2 :</h1>
+<p>Write a function getGrade(score) that:</p>
+<p> Takes A student's score as input (0 to 100)</P>
+<p>Returns the grade based on below logic:</P>
+<p>90-100 A+</P>
+<p>80-89 A</P>
+<p>70-79 B</P>
+<p>60-69 C</P>
+<p>33-59 D</P>
+<p>0-32 Fail</P>
+<p>Anything Else Invalid Marks</P>
+<p>output :
+let score = prompt("Enter your marks");
+score = Number(score);
+
+function getGrade(marks) {
+    if (marks >= 90 && marks <= 100) return "A+";
+    else if (marks >= 80 && marks < 90) return "A";
+    else if (marks >= 70 && marks < 80) return "B";
+    else if (marks >= 60 && marks < 70) return "C";
+    else if (marks >= 33 && marks < 60) return "D";
+    else if (marks >= 0 && marks < 33) return "Fail";
+    else return "Invalid Marks";
+}
+
+console.log(getGrade(score));
+
+ </p>
+<p>Reason: 
+</P>
+<div>
+
+
+
+<div>
+<h1>Example 3 :</h1>
+<p>Rock-Paper-Scissors:</p>
+<p>rock - scissors --> rock</P>
+<p>paper - rock --> paper</P>
+<p>scissors - paper --> scissors</P>
+<p>output:function rps1(user, computer) {
+    if (user === computer) return "It's a tie!";
+    else if (
+        (user === "rock" && computer === "scissor") ||
+        (user === "paper" && computer === "rock") ||
+        (user === "scissor" && computer === "paper")
+    ) {
+        return "User wins!";
+    } else {
+        return "Computer wins!";
+    }
+}
+
+// Example run
+console.log(rps1("rock", "scissor"));   
+
+
+
+
+<div>
+
+
+
+
  
