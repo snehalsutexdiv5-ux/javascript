@@ -112,42 +112,57 @@
 // do {
 // code
 // change}
-// while (end);}
-let j = 12 ; // start
-do {
-    console.log("do while loop:",j); // code
-    j++;   // change (condition)
-}  while (j < 20); // while check after executing code blcok (end)
+// // while (end);}
+// let j = 12 ; // start
+// do {
+//     console.log("do while loop:",j); // code
+//     j++;   // change (condition)
+// }  while (j < 20); // while check after executing code blcok (end)
 
-let z= 15 ; // start
-do {
-    console.log("do while loop:",z); // code
-    z++;   // change (condition)
-}  while (z < 10); 
-// why : answer is 15 otherwise 15 is more than to 10
+// let z= 15 ; // start
+// do {
+//     console.log("do while loop:",z); // code
+//     z++;   // change (condition)
+// }  while (z < 10); 
+// // why : answer is 15 otherwise 15 is more than to 10
 
-// break
- for (let k= 1; k <= 201; k++) {
-    console.log("Loop with break",k);
-    if (k === 24){
-        break;
-    }
- }
+// // break
+//  for (let k= 1; k <= 201; k++) {
+//     console.log("Loop with break",k);
+//     if (k === 24){
+//         break;
+//     }
+//  }
 
-let a=3;
-do{
-    console.log("do while loop",a);
-    a++;
-    }    while(a<20);
+// let a=1;
+// do{
+//     console.log("do while loop",a);
+//     a++;
+//     }    while(a<11);
 
+//     let a=10;
+// do{
+//     console.log("do while loop",a);
+//     a--;
+//     }    while(a>1);
 
-    for(let t=1;t <=200;t++){
-        console.log("monsson with brack",t)
-        if(t === 20){
-            break;
+    for(let i=1;i<=20;i++){
+        if(i%2 === 0){
+            console.log(i);
         }
-
     }
+    // for(let x=1;x<=20;x+=2){
+    //     console.log(x);
+        
+    // }
+
+    // for(let t=1;t <=200;t++){
+    //     console.log("monsson with brack",t)
+    //     if(t === 20){
+    //         break;
+    //     }
+
+    // }
 
     // continue
 // for ( let a = 1; a <= 10; a++){

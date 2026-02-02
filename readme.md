@@ -354,12 +354,58 @@ console.log(getGrade(score));
 // Example run
 console.log(rps1("rock", "scissor"));   
 
+<div>
 
+loop
 
 
 <div>
+<h1>Example 1:</h1>
+let a=1;
+do{
+    console.log("do while loop",a);
+    a++;
+    }    while(a<11);
 
+for (let i = 1; i <= 10; i++) {
+    console.log(i)
+}
+<p>Print number from 1 to 10 using a for loop.</p>
+</div>
 
+<div>
+<h1>Example 2:</h1>
+
+   let a=10;
+do{
+    console.log("do while loop",a);
+    a--;
+    }    while(a>1);
+
+for (let j = 10; j >= 1; j--) {
+    console.log(j)
+}
+
+<p>Print number from 10 to 1 using while loop.</p>
+</div>
+
+<div>
+<h1>Example 3:</h1>
+<p>Print even numbers from 1 to 20 using for loop.</p>
+<p>
+
+for(let i=1;i<=20;i++){
+        if(i%2 === 0){  <p> we add for odd no if(i%2 === 1)
+            console.log(i);
+        }
+    }
+
+    for(let x=1;x<=20;x+=2){
+        console.log(x);
+        
+    }
+ </p>
+</div>
 
 
  
