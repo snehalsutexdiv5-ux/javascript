@@ -524,4 +524,172 @@ const finalBalance = transactions.reduce((balance, amount) => balance + amount, 
 const items = ['Pen', 'Book', 'Pencil'];
 const result1 = items.reduce((text, item) => text + ', ' + item);
 
+// _______________________________________________________________________________
+
+// =============================
+// JavaScript Practice Answers
+// Using: filter() → map() → reduce()
+// VS Code style single page
+// =============================
+
+// Q1 Grocery Store – Total Cost
+const prices0 = [50, 120, 300, 80, 200];
+const totalCost = prices0
+  .filter(p => p > 100)        // keep items >100
+  .map(p => p * 1.05)          // add 5% tax
+  .reduce((a,b)=>a+b,0);       // total
+console.log("Q1:", totalCost);
+
+// Q2 Fitness Calories
+const minutes = [10, 25, 40, 15, 60];
+const calories = minutes
+  .filter(m=>m>=20)
+  .map(m=>m*4)
+  .reduce((a,b)=>a+b,0);
+console.log("Q2:", calories);
+
+// Q3 Passed Marks
+const marks0 = [35,55,80,20,45];
+const passedTotal = marks0
+  .filter(m=>m>=40)
+  .reduce((a,b)=>a+b,0);
+console.log("Q3:", passedTotal);
+
+// Q4 Bank Credits
+const transactions0 = [500,-200,1000,-300,700];
+const credits0 = transactions0
+  .filter(t=>t>0)
+  .reduce((a,b)=>a+b,0);
+console.log("Q4:", credits0);
+
+// Q5 Discount Bill
+const prices6 = [800,1500,3000,600,1200];
+const discountBill = prices6
+  .filter(p=>p>1000)
+  .map(p=>p*0.85)
+  .reduce((a,b)=>a+b,0);
+console.log("Q5:", discountBill);
+
+// Q6 Attendance Points
+const hours1 = [5,7,8,6,9];
+const points = hours1
+  .filter(h=>h>=7)
+  .map(h=>h*10)
+  .reduce((a,b)=>a+b,0);
+console.log("Q6:", points);
+
+// Q7 Delivery Distance
+const distances = [3,6,10,4,8];
+const totalDistance = distances
+  .filter(d=>d>5)
+  .map(d=>d+1)
+  .reduce((a,b)=>a+b,0);
+console.log("Q7:", totalDistance);
+
+// Q8 Salary System
+const salaries = [18000,25000,30000,15000];
+const payout = salaries
+  .filter(s=>s>20000)
+  .map(s=>s+2000)
+  .reduce((a,b)=>a+b,0);
+console.log("Q8:", payout);
+
+// Q9 Study Time
+const hours2 = [0.5,1.5,2,0.75,3];
+const studyMinutes = hours2
+  .filter(h=>h>1)
+  .map(h=>h*60)
+  .reduce((a,b)=>a+b,0);
+console.log("Q9:", studyMinutes);
+
+// Q10 Electricity Bill
+const units = [80,120,200,90,150];
+const bill = units
+  .filter(u=>u>100)
+  .map(u=>u*6)
+  .reduce((a,b)=>a+b,0);
+console.log("Q10:", bill);
+
+// Q11 Game Score
+const scores4 = [30,50,90,20,70];
+const powerScore = scores4
+  .filter(s=>s>40)
+  .map(s=>s*2)
+  .reduce((a,b)=>a+b,0);
+console.log("Q11:", powerScore);
+
+// Q12 Travel Fare
+const rides = [5,12,20,8,15];
+const fare = rides
+  .filter(r=>r>10)
+  .map(r=>r+50)
+  .reduce((a,b)=>a+b,0);
+console.log("Q12:", fare);
+
+// Q13 Productive Hours
+const hours3 = [4,6,8,5,9];
+const productiveMinutes = hours3
+  .filter(h=>h>=6)
+  .map(h=>h*60)
+  .reduce((a,b)=>a+b,0);
+console.log("Q13:", productiveMinutes);
+
+// Q14 Reward Coins
+const purchases = [300,800,1200,400];
+const coins = purchases
+  .filter(p=>p>500)
+  .map(()=>10)
+  .reduce((a,b)=>a+b,0);
+console.log("Q14:", coins);
+
+// Q15 Fuel Cost
+const liters = [3,6,10,4,8];
+const fuelCost = liters
+  .filter(l=>l>5)
+  .map(l=>l*105)
+  .reduce((a,b)=>a+b,0);
+console.log("Q15:", fuelCost);
+
+// Q16 Sum of Cubes
+const numbers1 = [1,2,3,4,5];
+const cubeSum = numbers1
+  .filter(n=>n%2!==0)
+  .map(n=>n**3)
+  .reduce((a,b)=>a+b,0);
+console.log("Q16:", cubeSum);
+
+// Q17 Bonus Points
+const scores2 = [10,20,30,40,50];
+const avg = scores2.reduce((a,b)=>a+b,0)/scores2.length;
+const bonusScore = scores2
+  .filter(s=>s>avg)
+  .map(s=>s+5)
+  .reduce((a,b)=>a+b,0);
+console.log("Q17:", bonusScore);
+
+// Q18 Subscription Bill
+const plans = [199,399,599,299];
+const finalBill = plans
+  .filter(p=>p>300)
+  .map(p=>p*1.18)
+  .reduce((a,b)=>a+b,0);
+console.log("Q18:", finalBill);
+
+// Q19 Achievement Score
+const scores3 = [45,60,70,30,80];
+const achievement = scores3
+  .filter(s=>s>=60)
+  .map(s=>s*s)
+  .reduce((a,b)=>a+b,0);
+console.log("Q19:", achievement);
+
+// Q20 Interview Finisher
+const numbers2 = [3,6,9,10,12];
+const finalSum = numbers2
+  .filter(n=>n%3===0)
+  .map(n=>n*10)
+  .reduce((a,b)=>a+b,0);
+console.log("Q20:", finalSum);
+
+
 

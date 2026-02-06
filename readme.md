@@ -1148,3 +1148,390 @@ const result = items.reduce((text, item) => text + ', ' + item);
 Answer:
 
 "Pen, Book, Pencil"
+
+______________________________________________________________________________________
+
+ JavaScript Filter → Map → Reduce Practice
+
+---
+
+Q1 Grocery Store – Total Cost
+
+
+const prices0 = [50, 120, 300, 80, 200];
+const totalCost = prices0
+  .filter(p => p > 100)
+  .map(p => p * 1.05)
+  .reduce((a,b)=>a+b,0);
+console.log("Q1:", totalCost);
+
+
+Output:** 651
+Explanation:**
+Prices >100 → [120, 300, 200]
+Add 5% tax → [126, 315, 210]
+Total = 651
+
+
+
+Q2 Fitness Calories
+
+js
+const minutes = [10, 25, 40, 15, 60];
+const calories = minutes
+  .filter(m=>m>=20)
+  .map(m=>m*4)
+  .reduce((a,b)=>a+b,0);
+console.log("Q2:", calories);
+```
+
+**Output:** 500
+**Explanation:**
+Minutes ≥20 → [25, 40, 60]
+Calories ×4 → [100, 160, 240]
+Total = 500
+
+---
+
+## Q3 Passed Marks
+
+```js
+const marks0 = [35,55,80,20,45];
+const passedTotal = marks0
+  .filter(m=>m>=40)
+  .reduce((a,b)=>a+b,0);
+console.log("Q3:", passedTotal);
+```
+
+Output:** 180
+Explanation:**
+Marks ≥40 → [55, 80, 45]
+Total = 180
+
+---
+
+ Q4 Bank Credits
+
+js
+const transactions0 = [500,-200,1000,-300,700];
+const credits0 = transactions0
+  .filter(t=>t>0)
+  .reduce((a,b)=>a+b,0);
+console.log("Q4:", credits0);
+```
+
+**Output:** 2200
+**Explanation:**
+Positive values → [500, 1000, 700]
+Total = 2200
+
+---
+
+## Q5 Discount Bill
+
+```js
+const prices6 = [800,1500,3000,600,1200];
+const discountBill = prices6
+  .filter(p=>p>1000)
+  .map(p=>p*0.85)
+  .reduce((a,b)=>a+b,0);
+console.log("Q5:", discountBill);
+```
+
+Output:** 4845
+Explanation:**
+Prices >1000 → [1500, 3000, 1200]
+15% discount → [1275, 2550, 1020]
+Total = 4845
+
+---
+Q6 Attendance Points
+
+js
+const hours1 = [5,7,8,6,9];
+const points = hours1
+  .filter(h=>h>=7)
+  .map(h=>h*10)
+  .reduce((a,b)=>a+b,0);
+console.log("Q6:", points);
+```
+
+**Output:** 240
+**Explanation:**
+Hours ≥7 → [7, 8, 9]
+×10 → [70, 80, 90]
+Total = 240
+
+---
+
+## Q7 Delivery Distance
+
+```js
+const distances = [3,6,10,4,8];
+const totalDistance = distances
+  .filter(d=>d>5)
+  .map(d=>d+1)
+  .reduce((a,b)=>a+b,0);
+console.log("Q7:", totalDistance);
+```
+
+Output:** 27
+Explanation:**
+Distance >5 → [6, 10, 8]
+Bonus +1 km → [7, 11, 9]
+Total = 27
+
+---
+
+Q8 Salary System
+
+js
+const salaries = [18000,25000,30000,15000];
+const payout = salaries
+  .filter(s=>s>20000)
+  .map(s=>s+2000)
+  .reduce((a,b)=>a+b,0);
+console.log("Q8:", payout);
+```
+
+**Output:** 59000
+**Explanation:**
+
+> 20000 → [25000, 30000]
+> +2000 → [27000, 32000]
+> Total = 59000
+
+---
+
+## Q9 Study Time
+
+```js
+const hours2 = [0.5,1.5,2,0.75,3];
+const studyMinutes = hours2
+  .filter(h=>h>1)
+  .map(h=>h*60)
+  .reduce((a,b)=>a+b,0);
+console.log("Q9:", studyMinutes);
+```
+
+Output:** 390 minutes
+Explanation:**
+
+> 1 hour → [1.5, 2, 3]
+> ×60 → [90, 120, 180]
+> Total = 390
+
+---
+
+Q10 Electricity Bill
+js
+const units = [80,120,200,90,150];
+const bill = units
+  .filter(u=>u>100)
+  .map(u=>u*6)
+  .reduce((a,b)=>a+b,0);
+console.log("Q10:", bill);
+```
+
+**Output:** 2820
+**Explanation:**
+Units >100 → [120, 200, 150]
+×6 → [720, 1200, 900]
+Total = 2820
+
+---
+
+## Q11 Game Score
+
+```js
+const scores4 = [30,50,90,20,70];
+const powerScore = scores4
+  .filter(s=>s>40)
+  .map(s=>s*2)
+  .reduce((a,b)=>a+b,0);
+console.log("Q11:", powerScore);
+```
+
+**Output:** 420
+**Explanation:**
+
+> 40 → [50, 90, 70]
+> Double → [100, 180, 140]
+> Total = 420
+
+---
+
+## Q12 Travel Fare
+
+js
+const rides = [5,12,20,8,15];
+const fare = rides
+  .filter(r=>r>10)
+  .map(r=>r+50)
+  .reduce((a,b)=>a+b,0);
+console.log("Q12:", fare);
+```
+
+**Output:** 197
+**Explanation:**
+
+> 10 km → [12, 20, 15]
+> +50 → [62, 70, 65]
+> Total = 197
+
+---
+
+## Q13 Productive Hours
+
+```js
+const hours3 = [4,6,8,5,9];
+const productiveMinutes = hours3
+  .filter(h=>h>=6)
+  .map(h=>h*60)
+  .reduce((a,b)=>a+b,0);
+console.log("Q13:", productiveMinutes);
+```
+
+**Output:** 1380 minutes
+**Explanation:**
+≥6 → [6, 8, 9]
+×60 → [360, 480, 540]
+Total = 1380
+
+---
+
+## Q14 Reward Coins
+
+js
+const purchases = [300,800,1200,400];
+const coins = purchases
+  .filter(p=>p>500)
+  .map(()=>10)
+  .reduce((a,b)=>a+b,0);
+console.log("Q14:", coins);
+```
+
+**Output:** 20 coins
+**Explanation:**
+
+> 500 → [800, 1200]
+> 10 each → [10, 10]
+> Total = 20
+
+---
+
+## Q15 Fuel Cost
+
+```js
+const liters = [3,6,10,4,8];
+const fuelCost = liters
+  .filter(l=>l>5)
+  .map(l=>l*105)
+  .reduce((a,b)=>a+b,0);
+console.log("Q15:", fuelCost);
+```
+
+**Output:** 2520
+**Explanation:**
+
+> 5 L → [6, 10, 8]
+> ×105 → [630, 1050, 840]
+> Total = 2520
+
+---
+
+## Q16 Sum of Cubes
+
+js
+const numbers1 = [1,2,3,4,5];
+const cubeSum = numbers1
+  .filter(n=>n%2!==0)
+  .map(n=>n**3)
+  .reduce((a,b)=>a+b,0);
+console.log("Q16:", cubeSum);
+```
+
+**Output:** 153
+**Explanation:**
+Odd numbers → [1, 3, 5]
+Cubes → [1, 27, 125]
+Total = 153
+
+---
+
+## Q17 Bonus Points
+
+```js
+const scores2 = [10,20,30,40,50];
+const avg = scores2.reduce((a,b)=>a+b,0)/scores2.length;
+const bonusScore = scores2
+  .filter(s=>s>avg)
+  .map(s=>s+5)
+  .reduce((a,b)=>a+b,0);
+console.log("Q17:", bonusScore);
+```
+
+**Output:** 100
+**Explanation:**
+Average = 30
+Above avg → [40, 50]
++5 → [45, 55]
+Total = 100
+
+---
+
+## Q18 Subscription Bill
+
+js
+const plans = [199,399,599,299];
+const finalBill = plans
+  .filter(p=>p>300)
+  .map(p=>p*1.18)
+  .reduce((a,b)=>a+b,0);
+console.log("Q18:", finalBill);
+```
+
+**Output:** 1177.64
+**Explanation:**
+
+> 300 → [399, 599]
+> +18% tax → [470.82, 706.82]
+> Total = 1177.64
+
+---
+
+## Q19 Achievement Score
+
+```js
+const scores3 = [45,60,70,30,80];
+const achievement = scores3
+  .filter(s=>s>=60)
+  .map(s=>s*s)
+  .reduce((a,b)=>a+b,0);
+console.log("Q19:", achievement);
+```
+
+**Output:** 14900
+**Explanation:**
+≥60 → [60, 70, 80]
+Square → [3600, 4900, 6400]
+Total = 14900
+
+---
+
+## Q20 Interview Finisher
+
+
+const numbers2 = [3,6,9,10,12];
+const finalSum = numbers2
+  .filter(n=>n%3===0)
+  .map(n=>n*10)
+  .reduce((a,b)=>a+b,0);
+console.log("Q20:", finalSum);
+```
+
+**Output:** 300
+**Explanation:**
+Divisible by 3 → [3, 6, 9, 12]
+×10 → [30, 60, 90, 120]
+Total = 300
