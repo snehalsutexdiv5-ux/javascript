@@ -1,412 +1,3 @@
-<h1>Example or Excercise:</h1>
-<div>
-<h3>Example 1 :</h3>
-<p>console.log(nm);</p>
-<p>let nm = "name";</p>
-<p>Answer or Error: </p>
-<p>Why : let is Cannot access nm before initialization</p>
-</div>
- 
-<div>
-<h3>Example 2 :</h3>
-<p>console.log(b);</p>-
-<p>var b = "username";</p>
-<p>Answer or Error: </p>
-<p>Answer : undefined because var is assigned in top </p>
-<p>Why : </p>
-</div>
- 
-<div>
-<h3>Example 3 :</h3>
-<p>var x = 1;</p>
-<p>{
-    var x= 2;
-}
-</p>
-<p>console.log(x);</p>
-<p>Answer or Error: 2</p>
-<p>Why : because var is global scoped not block scoped </p>
-</div>
- 
-<div>
-<h3>Example 4 :</h3>
-<p>let a = 10; </p>
-<p>{
-    let a = 20;
-    console.log("Inside:", a);
-}</p>
-<p>
-console.log("Outside:", a);
-</p>
-<p>Answer or Error: inside is 20 and outside is 10 </p>
-<p>Why : let is block scoped</p>
-</div>
- 
-<div>
-<h3>Example 5 :</h3>
-<p>const person = {name: "demo"}; </p>
-on console.log
-<p>person.name= "user"; ✅</p>
-<p>person = {} ; ❌ </p>
-<p>Answer or Error: Assignment to constant variable. </p>
-<p>Why :beacuse value is  const variable cannot be changed and reassigened </p>
-</div>
-
-_______________________________________________________________________________________________________
-
-Javascript Datatype:
-<h3>Example 1 :</h3>
-<p>true + false </p>
-<p>answer is = 1</p>
-<p>why : 1 + 0 = 1 (because true consider 1 and false consider 0)</p>
-</div>
- 
-<div>
-<h3>Example 2 :</h3>
-<p>null + 1 </p>
-<p>answer is 1</p>
-<p> beacuse null consider 0 so 0+1 = 1
-</div>
- 
-<div>
-<h3>Example 3 :</h3>
-<p>"12" + 12 </p>
-<p>answer is = 1212</p>
-</div>
- 
-<div>
-<h3>Example 4 :</h3>
-<p>!! undefined</p>
-<p>answer is : false</p>
-<p> why : ! this not is boolean value one ! convert into true and !!(two) convert into false </P>
-</div>
- 
-<div>
-<h3>Example 5 :</h3>
-<p>"12" - 1 </p>
-<p>answer is 11 </p>
-<p> why : bacuse sub is consider  "" string is not consider as string </p>
-</div>
- 
-<div>
-<p> why typeof NaN --> number </p> 
-<p>NaN is a failed number oprations that why that type is number</p>
-<p> ex. "hello" + 5 --> NaN</p>
-<p>answer is : hello5 </p>
-<p> why : nan is cosider invalid mathamatics so it return number </P>
-</div>
- 
-<div>
-<p>Undefined vs Null</p>
-<p>let x;</p>
-<p>console.log(x);</p>
-<p>let y = null;</p>
-<p>console.log(y);</p>
-<p>answer is  x=undefined and y=null</p>
-<p>why : we not define any x value and we give value  y  null value 
-</p>
-</div>
-
-_____________________________________________________________________________________________________________________
-
-
-<div>
-<h1>Example 1 :</h1>
-<p>let x = 10;</p>
-<p>let y = 20;</p>
-<p>if(x>5 && y > 5){
-    console.log("Both are greater than 5");
-}else{
-    console.log("One or both are not greater than 5");
-}</p>
-<p>Output: Both are greater than 5</p>
-<p>and condition is both are true than true</P>
-</div>
-
-<div>
-<h1>Example 2 :</h1>
-<p>let isAdmin = true;</p>
-<p>let isLoggedIn = false;</p>
-<p>if(isAdmin || isLoggedIn){
-    console.log("Acess granted");
-}else{
-    console.log("Acess Denied");
-}</p>
-<p>Output: Access granted</p>
-<p>Reason: OR needs only one true.</P>
-</div>
-
-<div>
-<h1>Example 3 :</h1>
-<p>let temp = 35;</p>
-<p>if(!(temp > 30)){
-    console.log("Hot day");
-}else{
-    console.log("Pleasant day");
-}</p>
-<p>Output: Pleasant day</P>
-<p>Reason: NOT operator reverses the condition.</P>
-</div>
-
-<div>
-<h1>Example 4 :</h1>
-<p>let a = 0;</p>
-<p>if(a){
-    console.log("Truthy value");
-}else{
-    console.log("Falsy value");
-}</p>
-<p>Output: Falsy value</p>
-<p>Reason: 0 is a falsy value in JavaScript.</P>
-</div>
-
-<div>
-<h1>Example 5 :</h1>
-<p>let score = 78;</p>
-<p>let grade = score >= 90 ? "A" : score >= 80 ? "B" : score >= 70 ? "C" : "D";</p>
-<p>console.log("Grade:", grade);</p>
-<p>Output: Grade: C</p>
-<p>Reason: 78 ≥ 70 so grade is "C".</p>
-</div>
-
-<div>
-<h1>Example 6 :</h1>
-<p>let points = 120;</p>
-<p>let status = points >= 100 ? "Gold" : points >= 50 ? "Silver" : "Bronze";</p>
-<p>console.log("Status:", status);</p>
-<p>Output: Status: Gold</P>
-<p>
-</div>
-
-<div>
-<h1>Example 7:</h1>
-<p>let loggedIn = true;</p>
-<p>let hasToken = false;</p>
-<p>let access = loggedIn && hasToken ? "Allow" : "Deny";</p>
-<p>console.log("access:", access);</p>
-<p>Output: access: Deny</p>
-<p> because and consider true + faluse = faluse</p>
-</div>
-
-<div>
-<h1>Example 8:</h1>
-<p>let a = 5;</p>
-<p>a++</p>
-<p>console.log(a);</p>
-<p>Output: 6</P>
-<p>Reason: Value increases after use.</p>
-</div>
-
-<div>
-<h1>Example 9:</h1>
-<p>let a = 8;</p>
-<p>++a</p>
-<p>console.log(a);</p>
-<p>Output: 9</P>
-<p>Reason: Value increases before use.</P>
-</div>
-
-<div>
-<h1>Example 10:</h1>
-<p>let b = 4;</p>
-<p>let c = b++</p>
-<p>console.log(b, c);</p>
-<p>Output: 5 4</p>
-<p>Reason: first c = 4, then b becomes 5.</p>
-</div>
-
-<div>
-<h1>Example 11:</h1>
-<p>let b = 4;</p>
-<p>let c = ++b</p>
-<p>console.log(b, c);</p>
-<p>Output: 5 5</P>
-<p>Reason:
-++b is pre-increment.
-First b becomes 5, then assigned to c.</p>
-</div>
-
-<div>
-<h1>Example 11:</h1>
-<p>let m = 10;</p>
-<p>console.log(m--)</p>
-<p>console.log(m);</p>
-<p>output : 10 9 </p>
-<p>m-- prints first, then decreases.</p>
-</div>
-
-<div>
-<h1>Example 11:</h1>
-<p>let n = 5;</p>
-<p>let result = n++ + ++n;</p>
-<p>console.log(result);</p>
-<p>output : 12</P>
-<p>Reason:
-n++ → 5 (then n = 6)
-++n → 7
-5 + 7 = 12</P>
-
-</div>
-
-<div>
-<h1>Example 11:</h1>
-<p>let likes = 100;</p>
-<p>function likePost(){
-result ++likes;
-}</p>
-<p>console.log(likePost());</p>
-<p>console.log(likes);</p>
-<p>output : undefind </p>
-<p>Reason:
-Function does not return anything, so it prints undefined.
-likes++ increases value to 101.</P>
-</div>
-
-<div>
-<h1>Example 12:</h1>
-<p>let count = 5;</p>
-<p>if(count-- === 5){   
-console.log("Matched");
-}else{
-    console.log("Not Matched"); 
-}</p>
-<p>Output: Matched
-Reason:
-count-- compares first (5 === 5 → true),
-then count becomes 4.</P>
-<p></p>
-</div>
-
-_________________________________________________________________________________________________
-
-<div>
-<h1>Example 1 :</h1>
-<p>let x = 2;</p>
-<p>switch(x){
-   case 2:
-   console.log("Two");
-   case 3:
-   console.log("Three");
-}</P>
-<p>output : two three </p>
-<p>Reason: bacuse we not write break statement
-</P>
-</div>
-
-<div>
-
-
-
-<div>
-<h1>Example 2 :</h1>
-<p>Write a function getGrade(score) that:</p>
-<p> Takes A student's score as input (0 to 100)</P>
-<p>Returns the grade based on below logic:</P>
-<p>90-100 A+</P>
-<p>80-89 A</P>
-<p>70-79 B</P>
-<p>60-69 C</P>
-<p>33-59 D</P>
-<p>0-32 Fail</P>
-<p>Anything Else Invalid Marks</P>
-<p>output :
-let score = prompt("Enter your marks");
-score = Number(score);
-
-function getGrade(marks) {
-    if (marks >= 90 && marks <= 100) return "A+";
-    else if (marks >= 80 && marks < 90) return "A";
-    else if (marks >= 70 && marks < 80) return "B";
-    else if (marks >= 60 && marks < 70) return "C";
-    else if (marks >= 33 && marks < 60) return "D";
-    else if (marks >= 0 && marks < 33) return "Fail";
-    else return "Invalid Marks";
-}
-
-console.log(getGrade(score));
-
- </p>
-<p>Reason: 
-</P>
-<div>
-
-
-
-<div>
-<h1>Example 3 :</h1>
-<p>Rock-Paper-Scissors:</p>
-<p>rock - scissors --> rock</P>
-<p>paper - rock --> paper</P>
-<p>scissors - paper --> scissors</P>
-<p>output:function rps1(user, computer) {
-    if (user === computer) return "It's a tie!";
-    else if (
-        (user === "rock" && computer === "scissor") ||
-        (user === "paper" && computer === "rock") ||
-        (user === "scissor" && computer === "paper")
-    ) {
-        return "User wins!";
-    } else {
-        return "Computer wins!";
-    }
-}
-
-// Example run
-console.log(rps1("rock", "scissor"));   
-
-<div>
-
-loop
-
-
-<div>
-<h1>Example 1:</h1>
-let a=1;
-do{
-    console.log("do while loop",a);
-    a++;
-    }    while(a<11);
-
-for (let i = 1; i <= 10; i++) {
-    console.log(i)
-}
-<p>Print number from 1 to 10 using a for loop.</p>
-</div>
-
-<div>
-<h1>Example 2:</h1>
-
-   let a=10;
-do{
-    console.log("do while loop",a);
-    a--;
-    }    while(a>1);
-
-for (let j = 10; j >= 1; j--) {
-    console.log(j)
-}
-
-<p>Print number from 10 to 1 using while loop.</p>
-</div>
-
-<div>
-<h1>Example 3:</h1>
-<p>Print even numbers from 1 to 20 using for loop.</p>
-<p>
-
-for(let i=1;i<=20;i++){
-        if(i%2 === 0){  <p> we add for odd no if(i%2 === 1)
-            console.log(i);
-        }
-    }
-
-    for(let x=1;x<=20;x+=2){
-        console.log(x);
-        
-    }
- </p>
-</div>
-
 // Array - Hold multiple values at same time
 // ["Mobile", "Laptop", "Tablet", 5000, 25, 588]
 // ["a", "b", "Hello"]
@@ -574,9 +165,9 @@ let pro = products.splice(0,3);
 let colors = ['Red', 'Green', 'Blue', 'Yellow'];
 colors.splice(2, 1, 'Purple', 'Orange')
 
-//13
-let steps = ['Step 1', 'Step 2', 'Step 3'];
-steps.reverse().push('final round');
+// //13
+// let steps = ['Step 1', 'Step 2', 'Step 3'];
+// steps.reverse().push('final round');
 
 //14
 let names = ['alice', 'Bob', 'charlie', 'David'];
@@ -779,7 +370,7 @@ let num = def.every(function(val){
 
 // Destructuring operator -- give value to variable
 // (ex. we don't use everytime arr4[1], just save it
-// into variable let j, k) = arr1
+// into variable let j, k) = arr1)
 
 // let arr4 = [1, 2, 3, 4, 5]
 // let [j, k] = arr4; // --> desthucturing
@@ -800,10 +391,6 @@ let arr9 = [...arr8];
 //... --> rest --> into function
 //... --> spred --> into Array and Object
 
---------------------------------------------------------------------------------------------
-1. Double daily steps count
-
-Real life: Fitness app doubling step goal
 
 const steps = [1000, 2000, 3000];
 
@@ -813,149 +400,10 @@ function doubleSteps(step) {
 
 const newSteps = steps.map(doubleSteps);
 
-answer : [2000, 4000, 6000]
 
 
-
-
-2. Convert minutes to seconds
-
-Real life: Video duration calculation
-
-const minutes = [1, 5, 10];
-
-const seconds = minutes.map(function(min) {
-  return min * 60;
-});
-answer : [60, 300, 600]
-
-
-
-
-3. Add ₹50 delivery charge to prices
-
-Real life: Food delivery app
-
-const prices = [200, 350, 500];
-
-const finalPrices = prices.map(price => price + 50);
-answer :[250, 400, 550]
-
-
-
-4. Convert exam marks to grades
-
-Real life: Result system
-
-const marks = [35, 72, 88, 40];
-
-function getGrade(mark) {
-  return mark >= 40 ? 'Pass' : 'Fail';
-}
-
-const grades = marks.map(getGrade);
-answer : ["Fail", "Pass", "Pass", "Pass"]
-
-
-
-5. Capitalize names
-
-Real life: Display usernames properly
-
-const names = ['rahul', 'neha', 'amit'];
-
-const formattedNames = names.map(name =>
-  name[0].toUpperCase() + name.slice(1)
-);
-
-answer : ["Rahul", "Neha", "Amit"]
-
-
-6. Apply 10% discount
-
-Real life: Shopping sale
-
-const prices = [500, 1000, 1500];
-
-function applyDiscount(price) {
-  return price - price * 0.10;
-}
-
-const discounted = prices.map(applyDiscount);
-answer : [450, 900, 1350]
-
-
-
-7. Add bonus points to scores based on condition
-
-Real life: Game scoring system
-
-const scores = [45, 60, 85];
-
-const finalScores = scores.map(score => {
-  if (score >= 80) return score + 20;
-  if (score >= 50) return score + 10;
-  return score;
-});
-answer : Rules:
-
-≥80 → +20
-
-≥50 → +10
-
-Output:
-
-[45, 70, 105]
-
-
-8. Convert temperatures with formula
-
-Real life: Weather app
-
-const celsius = [0, 20, 30];
-
-function toFahrenheit(temp) {
-  return (temp * 9/5) + 32;
-}
-
-const fahrenheit = celsius.map(toFahrenheit);
-answer : Formula:
- (C × 9/5) + 32
-
-Output:
-
-[32, 68, 86]
-
-
-9. Generate table of numbers
-
-Real life: Math learning app
-
-const numbers = [1, 2, 3, 4];
-
-const tableOfTwo = numbers.map(num => num * 2);
-answer :  [2, 4, 6, 8]
-
-
-
-10. Combine map with string formatting
-
-Real life: SMS notification system
-
-const balances = [500, 1200, 300];
-
-const messages = balances.map(balance =>
-  `Your balance is ₹${balance}`
-);
-
- answer :  [
-"Your balance is ₹500",
-"Your balance is ₹1200",
-"Your balance is ₹300"
-]
-
-_____________________________________________________________________________________________________________
-
+// filter() = condition true hoy to value new array ma add thay
+// false hoy to ignore thay
 
 
 // 1. Get even numbers
@@ -1030,121 +478,50 @@ console.log("Selected Scores:", selectedScores);
 // Explanation: 50–90 vachche values
 // Answer: [60,85,90]
 
-___________________________________________________________________________________
 //  1. Total money in wallet
 const money = [100, 200, 50];
 const totalMoney = money.reduce((sum, amount) => sum + amount, 0);
 
 
-//  Answer: 350
 
-Explanation:
-
-sum = total money
-
-amount = current value
- બધા numbers add થાય → 100 + 200 + 50 = 350
 
 //  2. Total steps walked in a week
-const steps = [3000, 5000, 4000, 6000];
-const weeklySteps = steps.reduce((total, step) => total + step, 0);
+const steps1 = [3000, 5000, 4000, 6000];
+const weeklySteps = steps1.reduce((total, step) => total + step, 0);
 
-
-//  Answer: 18000
-
-Explanation:
- બધા steps add થાય →
-3000 + 5000 + 4000 + 6000 = 18000 steps
 
 //  3. Find total cart price
-const prices = [499, 299, 199];
-const totalPrice = prices.reduce((total, price) => total + price, 0);
+const prices3 = [499, 299, 199];
+const totalPrice = prices3.reduce((total, price) => total + price, 0);
 
-
-// Answer: 997
-
-Explanation:
- Shopping total →
-499 + 299 + 199 = 997
 
 // 4. Find maximum score
-const marks = [45, 88, 67, 92];
-const highest = marks.reduce((max, mark) => {
+const marks3 = [45, 88, 67, 92];
+const highest = marks3.reduce((max, mark) => {
   return mark > max ? mark : max;
 }, marks[0]);
 
 
-//  Answer: 92
-
-Explanation:
- Highest number શોધે છે
-
-45 vs 88 → 88
-
-88 vs 67 → 88
-
-88 vs 92 → 92
-
 // 5. Count total characters
-const words = ['Hi', 'Hello', 'JS'];
-const totalChars = words.reduce((count, word) => count + word.length, 0);
+const words2 = ['Hi', 'Hello', 'JS'];
+const totalChars = words2.reduce((count, word) => count + word.length, 0);
 
+// 6
+const words1 = ['Learning', 'JavaScript', 'is', 'fun'];
+const sentence = words1.reduce((text, word) => text + ' ' + word);
 
- Answer: 9
-
-Explanation:
-Letters count થાય
-
-Hi = 2
-
-Hello = 5
-
-JS = 2
-
- Total = 9 characters
-
- 6. Combine words into sentence
-const words = ['Learning', 'JavaScript', 'is', 'fun'];
-const sentence = words.reduce((text, word) => text + ' ' + word);
-
-
- Answer:
-
-"Learning JavaScript is fun"
-
-
-Explanation:
- Words જોડાઈ sentence બને છે.
-
- 7. Count passed students
-const marks = [35, 72, 88, 40, 25];
-const passCount = marks.reduce((count, mark) => {
+// 7
+const marks4 = [35, 72, 88, 40, 25];
+const passCount = marks4.reduce((count, mark) => {
   return mark >= 40 ? count + 1 : count;
 }, 0);
 
-
- Answer: 3
-
-Explanation:
- Pass ≥ 40
-72, 88, 40 → 3 students pass
-
- 8. Calculate final balance
-const transactions = [1000, -200, -300, 500];
+// 8
+const transactions1 = [1000, -200, -300, 500];
 const finalBalance = transactions.reduce((balance, amount) => balance + amount, 0);
 
-
- Answer: 1000
-
-Explanation:
-Deposit positive, withdraw negative
-1000 − 200 − 300 + 500 = 1000 balance
-
-10. Build comma-separated string
+// 9
 const items = ['Pen', 'Book', 'Pencil'];
-const result = items.reduce((text, item) => text + ', ' + item);
+const result1 = items.reduce((text, item) => text + ', ' + item);
 
 
-Answer:
-
-"Pen, Book, Pencil"
