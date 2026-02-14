@@ -1,5 +1,3 @@
-
-
 // Objects vs Array
 // Objects -- when you want to show all data based on
 // one entity(k j entity mate all data jota hoy) (ex.
