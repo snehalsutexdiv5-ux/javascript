@@ -53,3 +53,47 @@ inp.addEventListener("input", (dets) => {
         console.log(dets.data);
     }
 });
+
+// change -- when you chagne elements state
+let sel = document.querySelector("select");
+
+sel.addEventListener("change", (dets) => {
+    console.log(dets.target.value);
+    document.body.style.backgroundColor = dets.target.value;
+});
+
+let up_btn = document.querySelector(".upload");
+let cs_btn = document.querySelector("#btn1");
+
+cs_btn.addEventListener("click", () => {
+    up_btn.click();
+    // cs_btn.textContent = 
+});
+
+up_btn.addEventListener("change", (dets) => {
+    console.log(dets);
+    console.log(dets.target.files[0].name);
+    cs_btn.textContent = dets.target.files[0].name;
+});
+
+
+// input
+// how to know which is typed ?
+let inp = document.querySelector("input");
+
+inp.addEventListener("input", (dets) => {
+    // console.log(dets);
+    if (dets.data !== null) {
+        console.log(dets.data);
+    }
+});
+
+// change -- when you chagne elements state
+let sel = document.querySelector(".select");
+let mobile = document.querySelector("i")
+
+sel.addEventListener("change", (dets)=>{
+    console.log(dets);
+    console.log(dets.target.value);
+    mobile.textContent = dets.target.value;
+})
