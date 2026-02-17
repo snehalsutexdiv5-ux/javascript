@@ -10,28 +10,63 @@
             height: 200px;
             border: 1px solid red;
         }
+       
+        .device{
+            text-transform: capitalize;
+        }
+        .outer_box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            border-radius: 10px;
+
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: darkgreen;
+            transition: 0.3s;
+        }
+      
     </style>
+
+
 </head>
 <body>
    
+
     <button class="btn">Dark Mode</button>
     <button class="btn1">Click me</button>
     <div class="color-card"></div>
     <button class="btn2">Color Change</button>
     <br /><br />
 
-    <input type="text">
-<input type="text">
 
+    <input type="text">
+
+
+    <h2>select your device: <i class="device"> </i></h2>
+    <select class = "sel">
+        <option>select</option>
+        <option value="phone">phone</option>
+        <option value="laptop">laptop</option>
+        <option value="watch">watch</option>
+        <option value="tablet">tablet</option>
+    </select>
 <br><br>
-<h2>Select Mobile : </h2>
-<select>
-    <div class="select"></div>
-    <option >Select Phone</option>
-    <option value="iphone 15">Iphone 15</option>
-    <option value="s22 ultra">S22 Ultra</option>
-    <option value="nokia 331">Nokia 3310</option>
-</select>
+     <div class="outer_box"></div>
+    <br><br>
+     backgrond color:<input type = "color" class="color_inp">
+     boder color:<input type = "color" class="boder_inp">
+<br><br>
+
+<form action="">
+    <input type="text">
+    <button>submit</button>
+</form>
+
+<div class="box2"> </div>
 
 <br><br>
     <script src="event.js"></script>

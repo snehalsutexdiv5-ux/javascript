@@ -54,46 +54,49 @@ inp.addEventListener("input", (dets) => {
     }
 });
 
-// change -- when you chagne elements state
-let sel = document.querySelector("select");
+
+
+// change -- when you change elements state
+let sel = document.querySelector(".sel");
+let device = document.querySelector(".device");
 
 sel.addEventListener("change", (dets) => {
     console.log(dets.target.value);
-    document.body.style.backgroundColor = dets.target.value;
-});
-
-let up_btn = document.querySelector(".upload");
-let cs_btn = document.querySelector("#btn1");
-
-cs_btn.addEventListener("click", () => {
-    up_btn.click();
-    // cs_btn.textContent = 
-});
-
-up_btn.addEventListener("change", (dets) => {
-    console.log(dets);
-    console.log(dets.target.files[0].name);
-    cs_btn.textContent = dets.target.files[0].name;
+    device.textContent = dets.target.value;
 });
 
 
-// input
-// how to know which is typed ?
-let inp = document.querySelector("input");
+// change event => change div color and border color with color input
 
-inp.addEventListener("input", (dets) => {
-    // console.log(dets);
-    if (dets.data !== null) {
-        console.log(dets.data);
-    }
+let box1 = document.querySelector(".outer_box");
+let inp1 = document.querySelector(".color_inp");
+let inp2 = document.querySelector(".boder_inp");
+
+inp1.addEventListener("change", (dets)=>{
+    box1.style.backgroundColor = dets.target.value;
 });
 
-// change -- when you chagne elements state
-let sel = document.querySelector(".select");
-let mobile = document.querySelector("i")
+  inp2.addEventListener("change", (dets)=>{
+  box1.style.borderColor = dets.target.value;
+});
 
-sel.addEventListener("change", (dets)=>{
-    console.log(dets);
-    console.log(dets.target.value);
-    mobile.textContent = dets.target.value;
+// submit
+let from = document.querySelector("form");
+form.addEventListener("sumbit", () => {
+    document.body.style.backgroundColor = "red";
 })
+
+// mousemove and mouseout
+let box2 = document.querySelector(".box2");
+
+box2.addEventListener("mousemove", () => {
+    box2.style.backgroundColor = "skyblue";
+    box2.style.width = "300px";
+});
+
+box2.addEventListener("mouseout", () => {
+    box2.style.backgroundColor = "darkgreen";
+    box2.style.width = "100px";
+});
+
+// mouse move --effect
