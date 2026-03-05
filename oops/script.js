@@ -79,10 +79,26 @@ class User{
     constructor(name, email, password){
         this.name = name;
         this.email = email;
-        this.age = age;
+        this.password = password;
         this.role = "user";
     }
 }
 
 let user = new User("test", "test@test.com", "abc@123");
 console.log("user",user);
+
+
+class Admin extends User {
+    constructor(name, email, password, rights) {
+         super(name, email, password) // extends class contructor --> super
+         this.role = "admin";
+         this.rights = rights;
+    }
+}
+
+let admin = new Admin("admin", 
+    "admin@dmin.com",
+     "abc@123", 
+     "delete user, edit user, create user",
+    );
+    console.log(admin);
