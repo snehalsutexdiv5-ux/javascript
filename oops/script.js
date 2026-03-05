@@ -102,3 +102,12 @@ let admin = new Admin("admin",
      "delete user, edit user, create user",
     );
     console.log(admin);
+
+    
+// prototype inhetitance vs classical inhetitance
+// classical inhetitance -- cerate a classes and extand their classes
+
+// inhetitance meaning --> class to class inhetitance (copy one class into author class)
+
+// prototype inhetitance --> object to object
+// ek object che tene tame all props/method ne inherit kari che k nva object ma
